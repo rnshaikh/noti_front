@@ -1,0 +1,22 @@
+
+
+<div class="container">
+<div class="row">
+  <h1> Notification Type </h1>
+
+</div>
+
+<div class="row">
+  <form #notificationtypeForm="ngForm"
+(ngSubmit)="notificationformsumbit(notificationtypeForm)"
+>
+  <input type="checkbox" id="notification1" name="notification_type" value="notification1" [(ngModel)]="notification1">
+  <label for="notification1">Notification1</label><br>
+  <input type="checkbox" id="notification2" name="notification_type" value="notification2" [(ngModel)]="notification2">
+  <label for="notification2">Notification2</label><br>
+  <input type="checkbox" id="notification3" name="notification_type" value="notification3" [(ngModel)]="notification3">
+  <label for="notification3">Notification3</label><br>
+  <div class="form-group"> <button  class="form-control btn-success"> submit</button></div>
+</form>
+</div>
+</div>

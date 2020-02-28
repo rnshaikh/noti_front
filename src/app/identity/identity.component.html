@@ -1,0 +1,19 @@
+<a>{{ address }}</a>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10">
+      <h1>Create Identity To Send Notifications</h1>
+    </div>
+    
+  </div>
+  <div class="row"> </div>
+  <div class="row"></div>
+  <div class="row">
+    <form  #signinForm="ngForm"
+      (ngSubmit)="identityFormSubmit(signinForm)">
+      &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="identity" [(ngModel)]="identity" placeholder="Create Identity"> &nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="btn-success" > submit</button>
+    </form>
+  </div>
+</div>
+
